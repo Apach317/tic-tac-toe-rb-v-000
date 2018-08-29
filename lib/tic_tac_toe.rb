@@ -23,6 +23,6 @@ WIN_COMBINATIONS =[
 [6,4,2]
 ]
 
-def input_to_index(board)
+def input_to_index(user_input)
   input = index.i
 end
