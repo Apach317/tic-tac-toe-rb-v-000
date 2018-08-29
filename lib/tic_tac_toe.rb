@@ -127,7 +127,7 @@ def won?(board)
       if !over?(board)
         return turn(board)
       end
-
+      if over?(board)
       if won?(board)
         puts "Congratulations #{winner(board)}!"
       elsif draw?(board)
