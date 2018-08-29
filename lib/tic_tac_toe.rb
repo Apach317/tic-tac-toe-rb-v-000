@@ -48,8 +48,10 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index, current_player = "X")
     display_board(board)
-  else
+  elsif
     turn(board)
+  else
+    over?(board)
   end
 end
 
