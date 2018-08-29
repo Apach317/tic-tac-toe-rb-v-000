@@ -52,3 +52,75 @@ def turn(board)
     turn(board)
   end
 end
+
+def turn_count(board)
+  r = 0
+  counter = 0
+  while r <= 9
+    if board[r] == "X" || board[r] == "O"
+      counter += 1
+    end
+    r += 1
+  end
+  counter
+end
+
+
+def current_player(board)
+  turn_count(board).even? ? "X" : "O"
+end
+
+def won?(board)
+    WIN_COMBINATIONS.each {|winning|
+      index_0 = winning[0]
+      index_1 = winning[1]
+      index_2 = winning[2]
+
+      position_1 = board[index_0]
+      position_2 = board[index_1]
+      position_3 = board[index_2]
+
+      if position_1 == "X" && position_2 == "X" && position_3 == "X"
+        return winning
+      elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
+        return winning
+      end
+    }
+    return false
+  end
+
+  def full?(board)
+    board.all? {|index| index == "X" || index == "O"}
+  end
+
+  def draw?(board)
+    if !won?(board) && full?(board)
+      return true
+    else
+      return false
+    end
+  end
+
+  def over?(board)
+    if won?(board) || full?(board) || draw?(board)
+      return true
+    else
+      return false
+    end
+  end
+
+  def winner (board)
+    index = []
+    index = won?(board)
+    if index == false
+      return nil
+    else
+      if board[index[0]] == "X"
+        return "X"
+      else
+        return "O"
+      end
+    end
+  end
+
+
