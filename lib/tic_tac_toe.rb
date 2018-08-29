@@ -123,7 +123,7 @@ def won?(board)
     end
   end
 
-  def play(board, user_input)
+  def play(board)
     gets user_input
       if user_input = [1,9]
         turn(board)
