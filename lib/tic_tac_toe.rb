@@ -125,7 +125,7 @@ def won?(board)
 
   def play(board)
 
-      input = gets
+      input = gets current_player
 
       while over?(board) == false
         turn(board)
