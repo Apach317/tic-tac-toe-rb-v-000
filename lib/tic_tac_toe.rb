@@ -128,6 +128,8 @@ def won?(board)
         return turn(board)
       elsif over?(board) == true
         return winner(board)
+        return full?(board)
+        return won?(board)
         return('Congratulations' + winner(board) + "!")
     end
   end
