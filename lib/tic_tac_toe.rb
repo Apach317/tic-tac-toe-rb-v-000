@@ -129,6 +129,6 @@ def won?(board)
     9.times do
       if turn(board)
       end
-    if over?(board)
+      over?(board)
     end
   end
