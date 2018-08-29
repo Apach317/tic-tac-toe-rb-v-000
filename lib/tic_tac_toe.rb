@@ -46,7 +46,7 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index)
-    move(board, index, current_player = "X" || "O")
+    move(board, index, current_player(board))
     display_board(board)
   elsif
     turn(board)
@@ -125,7 +125,7 @@ def won?(board)
 
   def play(board)
 
-      while !over?(board)
+      while over?(board) == false
         turn(board)
       end
 
