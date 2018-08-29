@@ -131,11 +131,11 @@ def won?(board)
       end
 
       if won?(board)
-        return "Congratulations #{winner(board)!}"
+        return "Congratulations #{winner(board)}!"
       end
 
       if draw?(board)
-        return "Cat's Game!"
+        return "Cat/'s Game!"
       end
-      
+
   end
