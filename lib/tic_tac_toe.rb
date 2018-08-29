@@ -124,6 +124,7 @@ def won?(board)
   end
 
   def play(board, user_input)
+    gets user_input
       if user_input = [1,9]
         turn(board)
         over?(board)
