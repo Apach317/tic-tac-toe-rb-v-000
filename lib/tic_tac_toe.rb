@@ -24,5 +24,5 @@ WIN_COMBINATIONS =[
 ]
 
 def input_to_index(board)
-  gets input.getstrip
+  input = index.i
 end
