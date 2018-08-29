@@ -122,3 +122,9 @@ def won?(board)
       end
     end
   end
+
+  def play(board)
+    9.times do
+      turn(board)
+    end
+  end
