@@ -126,9 +126,15 @@ def won?(board)
   end
 
   def play(board)
-      if over?(board) == false
+      if !over?(board)
         return turn(board)
-      elsif over?(board) == true
-        return full?(board)
+      end
+
+      if won?(board)
+        return "Congratulations #{winner(board)!}"
+      end
+
+      if draw?(board)
+        return "Cat's Game!"
       end
     end
