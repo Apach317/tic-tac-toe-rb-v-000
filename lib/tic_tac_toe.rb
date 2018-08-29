@@ -23,6 +23,6 @@ WIN_COMBINATIONS =[
 [6,4,2]
 ]
 
-def input_to_index(user_input - 1)
-  index = user_input.to_i
+def input_to_index(user_input)
+  index = user_input.to_i - 1
 end
