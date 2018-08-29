@@ -123,8 +123,9 @@ def won?(board)
     end
   end
 
-  def play(board)
-      if turn(board) == true
+  def play(board, user_input)
+      if user_input = [1,9]
+        turn(board)
         over?(board)
       else over?(board)
     end
