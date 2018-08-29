@@ -124,7 +124,6 @@ def won?(board)
   end
 
   def play(board)
-    input = gets.strip
       if over?(board) == false
         return turn(board)
       elsif over?(board) == true
