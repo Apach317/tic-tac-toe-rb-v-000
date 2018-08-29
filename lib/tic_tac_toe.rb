@@ -50,8 +50,6 @@ def turn(board)
     display_board(board)
   elsif
     turn(board)
-  else
-    over?(board)
   end
 end
 
