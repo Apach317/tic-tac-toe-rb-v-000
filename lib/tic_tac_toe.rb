@@ -28,6 +28,14 @@ def input_to_index(user_input)
 end
 
 current_player = "X"
+
 def move(board, index, current_player)
   board[index] = current_player
 end
+
+def position_take?(board)
+  if |board| = ""
+    puts false
+  else
+    puts true
+  end
