@@ -124,10 +124,7 @@ def won?(board)
   end
 
   def play(board)
-    gets user_input
-      if user_input = [1,9]
-        turn(board)
-        over?(board)
-      else turn(board)
+      if over?(board) == false
+        return turn(board)
     end
   end
