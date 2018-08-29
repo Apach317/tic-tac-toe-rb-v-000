@@ -29,4 +29,3 @@ end
 
 def move(board, position, "X")
 end
-  
