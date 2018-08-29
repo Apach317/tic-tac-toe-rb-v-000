@@ -109,7 +109,7 @@ def won?(board)
     end
   end
 
-  def winner (board)
+  def winner(board)
     index = []
     index = won?(board)
     if index == false
@@ -120,5 +120,12 @@ def won?(board)
       else
         return "O"
       end
+    end
+  end
+
+  def play(board)
+    9.times do
+      turn(board)
+      over?(board)
     end
   end
