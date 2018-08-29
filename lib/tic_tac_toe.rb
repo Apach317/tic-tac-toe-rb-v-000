@@ -126,7 +126,5 @@ def won?(board)
   def play(board)
       if over?(board) == false
         return turn(board)
-      elsif winner(board) == true
-        return won?(board)
     end
   end
