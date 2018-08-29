@@ -33,9 +33,10 @@ def move(board, index, current_player)
   board[index] = current_player
 end
 
-def position_take?(board)
+def position_taken?(board)
   if |board| = ""
     puts false
   else
     puts true
   end
+end
