@@ -127,6 +127,6 @@ def won?(board)
       if user_input = [1,9]
         turn(board)
         over?(board)
-      else over?(board)
+      else turn(board)
     end
   end
