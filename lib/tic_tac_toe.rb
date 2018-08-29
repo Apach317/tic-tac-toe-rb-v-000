@@ -128,5 +128,6 @@ def won?(board)
         return turn(board)
       elsif
         return over?(board)
+      end
     end
   end
