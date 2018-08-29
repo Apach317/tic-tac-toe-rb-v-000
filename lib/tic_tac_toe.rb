@@ -125,7 +125,7 @@ def won?(board)
 
   def play(board)
     9.times do
-      if turn(board) = true
+      if turn(board)
       else over?(board)
     end
   end
