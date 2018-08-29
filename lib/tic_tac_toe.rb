@@ -127,6 +127,7 @@ def won?(board)
       if over?(board) == false
         return turn(board)
       elsif over?(board) == true
-        return ('Congratulations' + winner(board) + "!")
+        return winner(board)
+        return('Congratulations' + winner(board) + "!")
     end
   end
