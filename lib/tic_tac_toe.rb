@@ -130,4 +130,3 @@ def won?(board)
         return over?(board)
       end
     end
-  end
