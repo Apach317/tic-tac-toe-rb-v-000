@@ -1,4 +1,4 @@
-WIN_COMBINATIONS [
+WIN_COMBINATIONS[
 index1=[0,1,2]
 index2=[3,4,5]
 index3=[6,7,8]
