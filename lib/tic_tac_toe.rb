@@ -102,7 +102,7 @@ def won?(board)
   end
 
   def over?(board)
-    if won?(board) || full?(board) || draw?(board)
+    if won?(board) || draw?(board)
       return true
     else
       return false
@@ -124,15 +124,15 @@ def won?(board)
   end
 
   def play(board)
+
       if !over?(board)
         return turn(board)
       end
-      if over?(board)
-      if won?(board)
-        puts "Congratulations #{winner(board)}!"
-      elsif draw?(board)
-        puts "Cat's Game!"
+
+        if won?(board)
+          puts "Congratulations #{winner(board)}!"
+        elsif draw?(board)
+          puts "Cat's Game!"
       end
-    end
 
   end
